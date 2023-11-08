@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <fieldset style="width: 500px;">
+        <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your <br> custom pizza and we'll deliver it within an hour <br><br> Your Information</p>
+
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="customername"><br>
+
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="telephone number">Telephone Number: </label>
+            <input type="text" id="telephone number" name="telephone"><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="di">delivery Intructions: </label><br>
+            <textarea name="instructions" id="di" cols="40" rows="7"></textarea>
+            
+            <p><b>Design Your Dream Pizza:</b><br>pizza specsbr
+            <br>Crust (Couse one)</p>
+            <input type="radio" id="cw" value="Classic White" name="crust">
+            <label for="cw">Classic White</label>
+            <br>
+            <input type="radio" id="mg" value="Multigrain" name="crust">
+            <label for="mg">Multigrain</label>
+            <br>
+            <input type="radio" id="csc" value="Cheese-stuffed crus" name="crust">
+            <label for="csc">Cheese-stuffed crust</label>
+            <br>
+            <input type="radio" id="gf" value="Gluten-free" name="crust">
+            <label for="gf">Gluten-free</label>
+            
+            <p>Toppings (Choose as many as you want):</p>
+            <input type="checkbox" id="rs" value="Red sauce" name="toppings[]" checked>
+            <label for="rs">Red sauce</label>
+            <br>
+            <input type="checkbox" id="ws" value="White sauce" name="toppings[]">
+            <label for="ws">White sauce</label>
+            <br>
+            <input type="checkbox" id="mc" value="Mozzarella Cheese" name="toppings[]">
+            <label for="mc">Mozzarella Cheese</label>
+            <br>
+            <input type="checkbox" id="pp" value="Pepperoni" name="toppings[]">
+            <label for="pp">Pepperoni</label>
+            <br>
+            <input type="checkbox" id="mr" value="Mushrooms" name="toppings[]">
+            <label for="mr">Mushrooms</label>
+            <br>
+            <input type="checkbox" id="pp" value="Peppers" name="toppings[]">
+            <label for="pp">Peppers</label>
+            <br>
+            <input type="checkbox" id="av" value="Anchovies" name="toppings[]">
+            <label for="av">Anchovies</label>
+            <br><br>
+
+            Number <br>
+            <label for="">How many pizzas:</label>
+            <input type="number" name="pizzas" id="hmp" max="6">
+
+            <br>
+            <input type="submit" value="Bring me apizza!">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>
